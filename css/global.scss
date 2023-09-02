@@ -1,0 +1,85 @@
+/* nunito-regular - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Nunito';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../assets/fonts/nunito-v25-latin-regular.woff2') format('woff2'),
+		/* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ url('../assets/fonts/nunito-v25-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* nunito-700 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Nunito';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../assets/fonts/nunito-v25-latin-700.woff2') format('woff2'),
+		/* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ url('../assets/fonts/nunito-v25-latin-700.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+/* nunito-800 - latin */
+@font-face {
+	font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+	font-family: 'Nunito';
+	font-style: normal;
+	font-weight: 800;
+	src: url('../assets/fonts/nunito-v25-latin-800.woff2') format('woff2'),
+		/* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */ url('.../assets/fonts/nunito-v25-latin-800.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+}
+
+html {
+	font-size: 62.5%;
+}
+body {
+	margin: 0;
+	box-sizing: border-box;
+	background-color: var(--clr-background);
+	font-family: 'Nunito', sans-serif;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+li,
+p,
+a {
+	font-size: 1.6rem;
+}
+a {
+	color: var(--link-color);
+	text-decoration: none;
+	font-family: 'Nunito', sans-serif;
+}
+p {
+	font-size: 1.6em;
+}
+svg {
+	width: 100%;
+}
+
+.mobile-hidden {
+	display: none;
+}
+
+.wrapper {
+	padding: 0 2em;
+}
+
+a.logo {
+	height: 36px;
+	img {
+		height: 36px;
+		width: 104px;
+	}
+}
+
+.active::after {
+	content: '';
+	position: absolute;
+	height: 2px;
+	width: 50%;
+	bottom: 0;
+	left: 0;
+	background-color: black;
+	border-radius: 1rem;
+}
