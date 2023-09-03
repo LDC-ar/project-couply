@@ -1,7 +1,8 @@
 :root {
   --clr-background: #e8f5e2;
   --clr-green: #9bc588;
-  --clr-green-hover: #bcf0a3;
+  --clr-green-light: #c6dbbd;
+  --clr-green-hover: #d4dfcf;
   --clr-green-dark: #608a4d;
   --clr-grey: #6c7667;
 }/*# sourceMappingURL=variables.css.map */

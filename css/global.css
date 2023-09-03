@@ -14,14 +14,6 @@
   font-weight: 700;
   src: url("../assets/fonts/nunito-v25-latin-700.woff2") format("woff2"), url("../assets/fonts/nunito-v25-latin-700.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
 }
-/* nunito-800 - latin */
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: "Nunito";
-  font-style: normal;
-  font-weight: 800;
-  src: url("../assets/fonts/nunito-v25-latin-800.woff2") format("woff2"), url(".../assets/fonts/nunito-v25-latin-800.ttf") format("truetype"); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
-}
 html {
   font-size: 62.5%;
 }
@@ -83,5 +75,5 @@ a.logo img {
   bottom: 0;
   left: 0;
   background-color: black;
-  border-radius: 1rem;
+  border-radius: 35%;
 }/*# sourceMappingURL=global.css.map */
