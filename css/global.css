@@ -51,7 +51,20 @@ svg {
   width: 100%;
 }
 
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 .mobile-hidden {
+  display: none;
+}
+
+.mobile-hidden-header {
+  display: none;
+}
+
+.mobile-tablet-hidden {
   display: none;
 }
 

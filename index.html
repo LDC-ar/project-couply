@@ -34,7 +34,7 @@
 				<div class="menu"></div>
 			</a>
 
-			<a href="#" class="cta-btn-header mobile-hidden">
+			<a href="#" class="cta-btn-header mobile-hidden-header">
 				<strong>Start saving</strong>
 				<img src="assets/images/arrow.svg" alt="arrow" />
 			</a>
@@ -99,7 +99,7 @@
 				<img src="assets/images/bestbuy.svg" alt="Bestbuy logo" />
 				<img src="assets/images/shopify.svg" alt="Shopify logo" />
 				<img src="assets/images/wallmart.svg" alt="Wallmart logo" />
-				<a href="#" class="view-brands mobile-hidden">
+				<a href="#" class="view-brands mobile-tablet-hidden">
 					<img src="assets/images/eye.svg" alt="Eye icon" />
 					<span>View all brands</span>
 				</a>
@@ -119,10 +119,10 @@
 					<div class="products--grid--item">
 						<img src="assets/images/nike2.webp" alt="Women's Nike Shoes" />
 						<div class="products--grid--item__title">
-							<p>Women's Nike Shoes</p>
+							<p>Quiky Arrows</p>
 						</div>
 						<div class="products--grid--item__price">
-							<span>$69</span>
+							<span>$14</span>
 						</div>
 					</div>
 					<div class="products--grid--item">
@@ -131,7 +131,7 @@
 							<p>SkullCrusher Headphones</p>
 						</div>
 						<div class="products--grid--item__price">
-							<span>$69</span>
+							<span>$35</span>
 						</div>
 					</div>
 					<div class="products--grid--item mobile-hidden">
@@ -149,7 +149,7 @@
 							<p>Cool Shades</p>
 						</div>
 						<div class="products--grid--item__price">
-							<span>$69</span>
+							<span>$17</span>
 						</div>
 					</div>
 					<div class="products--grid--item mobile-hidden">
@@ -158,7 +158,7 @@
 							<p>Cool Fragances</p>
 						</div>
 						<div class="products--grid--item__price">
-							<span>$69</span>
+							<span>$19</span>
 						</div>
 					</div>
 				</div>
@@ -217,6 +217,8 @@
 				e.preventDefault();
 				menuMobileBtn.classList.toggle('open');
 				navMenu.classList.toggle('open');
+				// To block scroll
+				document.body.classList.toggle('stop-scrolling');
 			});
 
 			// Add an EventListener to each LI element of the nav menu
@@ -228,6 +230,8 @@
 						e.preventDefault();
 						menuMobileBtn.classList.toggle('open');
 						navMenu.classList.toggle('open');
+						// To block scroll
+						document.body.classList.toggle('stop-scrolling');
 					});
 				}
 			}

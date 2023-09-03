@@ -47,8 +47,21 @@ p {
 svg {
 	width: 100%;
 }
+// To block scroll when mobile menu is open
+.stop-scrolling {
+	height: 100%;
+	overflow: hidden;
+}
 
 .mobile-hidden {
+	display: none;
+}
+
+.mobile-hidden-header {
+	display: none;
+}
+
+.mobile-tablet-hidden {
 	display: none;
 }
 
