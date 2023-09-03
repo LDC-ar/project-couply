@@ -5,6 +5,7 @@
   --clr-green-hover: #d4dfcf;
   --clr-green-dark: #608a4d;
   --clr-grey: #636a5f;
+  --clr-green-span: #577e45;
 }
 
 /* nunito-regular - latin */
@@ -677,7 +678,7 @@ footer .footer--col2 span {
     font-family: inherit;
   }
   main section.home .home--col2 .home--col2--stats span.green {
-    color: var(--clr-green-dark);
+    color: var(--clr-green-span);
     font-weight: bold;
   }
   main section.home .home--col2 .home--col2--stats p {
