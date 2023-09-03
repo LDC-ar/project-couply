@@ -4,7 +4,7 @@
   --clr-green-light: #c6dbbd;
   --clr-green-hover: #d4dfcf;
   --clr-green-dark: #608a4d;
-  --clr-grey: #6c7667;
+  --clr-grey: #636a5f;
 }
 
 /* nunito-regular - latin */
@@ -378,7 +378,7 @@ main section.products .products--grid .products--grid--item .products--grid--ite
   background: white;
   padding-left: 2em;
 }
-main section.products .products--grid .products--grid--item .products--grid--item__title h3 {
+main section.products .products--grid .products--grid--item .products--grid--item__title p {
   font-size: 1.6rem;
   font-family: inherit;
   font-weight: bold;
