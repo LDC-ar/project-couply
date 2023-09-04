@@ -5,32 +5,32 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="Project to test my skills in CSS & SASS" />
 		<title>Project: Couply</title>
-		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/style.min.css" />
 	</head>
 	<body>
 		<header class="wrapper" id="home">
-			<a href="#home" class="logo">
+			<a href="#home" class="logo" aria-label="navigation home">
 				<img src="assets/images/logo.svg" alt="Couply logo" />
 			</a>
 
-			<nav class="nav-primary">
+			<nav class="nav-primary" aria-label="navigation home">
 				<ul>
 					<li class="active">
-						<a href="#home">Home</a>
+						<a href="#home" aria-label="navigation home">Home</a>
 					</li>
 					<li>
-						<a href="#">Coupons</a>
+						<a href="#home" aria-label="navigation home">Coupons</a>
 					</li>
 					<li>
-						<a href="#">FAQ</a>
+						<a href="#home" aria-label="navigation home">FAQ</a>
 					</li>
 					<li>
-						<a href="#">Contact</a>
+						<a href="#home" aria-label="navigation home">Contact</a>
 					</li>
 				</ul>
 			</nav>
 
-			<a href="#" class="menu-mobile" aria-label="menu open">
+			<a href="#" class="menu-mobile" aria-label="Open menu">
 				<div class="menu"></div>
 			</a>
 
@@ -87,7 +87,7 @@
 						</div>
 					</div>
 
-					<a href="#" class="cta-btn-home">
+					<a href="#home" class="cta-btn-home" aria-label="navigation home">
 						<strong>Install Extension</strong>
 						<img src="assets/images/arrow.svg" alt="Arrow" />
 					</a>
@@ -163,7 +163,7 @@
 					</div>
 				</div>
 
-				<a href="#" class="view-offers">
+				<a href="#home" class="view-offers" aria-label="navigation home">
 					<img src="assets/images/eye.svg" alt="Eye icon" />
 					<span>View all offers</span>
 				</a>
@@ -172,7 +172,7 @@
 
 		<footer class="wrapper">
 			<div class="footer--col1">
-				<a class="logo" href="#home">
+				<a class="logo" href="#home" aria-label="navigation home">
 					<img src="assets/images/logo.svg" alt="Couply logo" />
 				</a>
 
@@ -191,16 +191,16 @@
 				<nav class="nav-secondary">
 					<ul>
 						<li class="active">
-							<a href="#home">Home</a>
+							<a href="#home" aria-label="navigation home">Home</a>
 						</li>
 						<li>
-							<a href="#">Coupons</a>
+							<a href="#home" aria-label="navigation home">Coupons</a>
 						</li>
 						<li>
-							<a href="#">FAQ</a>
+							<a href="#home" aria-label="navigation home">FAQ</a>
 						</li>
 						<li>
-							<a href="#">Contact</a>
+							<a href="#home" aria-label="navigation home">Contact</a>
 						</li>
 					</ul>
 				</nav>
@@ -209,32 +209,6 @@
 			</div>
 		</footer>
 
-		<script>
-			const menuMobileBtn = document.querySelector('.menu-mobile');
-			const navMenu = document.querySelector('.nav-primary');
-
-			menuMobileBtn.addEventListener('click', e => {
-				e.preventDefault();
-				menuMobileBtn.classList.toggle('open');
-				navMenu.classList.toggle('open');
-				// To block scroll
-				document.body.classList.toggle('stop-scrolling');
-			});
-
-			// Add an EventListener to each LI element of the nav menu
-			const nodeList = navMenu.childNodes[1].childNodes;
-
-			for (let i = 0; i < nodeList.length; i++) {
-				if (nodeList[i].nodeName === 'LI') {
-					nodeList[i].addEventListener('click', e => {
-						e.preventDefault();
-						menuMobileBtn.classList.toggle('open');
-						navMenu.classList.toggle('open');
-						// To block scroll
-						document.body.classList.toggle('stop-scrolling');
-					});
-				}
-			}
-		</script>
+		<script src="script.min.js" defer></script>
 	</body>
 </html>
