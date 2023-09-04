@@ -692,3 +692,131 @@ footer {
 	}
 }
 // TABLET END
+
+// DESKTOP
+@media only screen and (min-width: 1570px) {
+	.wrapper {
+		padding: 0 15.3em;
+	}
+
+	main {
+		// Section Home
+		section.home {
+			@include flex(row, center, center);
+			border-top: 1px solid black;
+
+			.wrapper {
+				padding: 0;
+			}
+
+			.home--col1 {
+				flex: 1;
+				padding-left: 15.3em;
+				padding-right: 7em;
+				padding-block: 8em;
+				border-bottom: 0;
+				border-top: 0;
+				border-right: 1px solid black;
+
+				.home--col1--text {
+					h1 {
+						margin-top: 0;
+						max-width: 570px;
+					}
+
+					.home--col1--info {
+						margin-bottom: 0;
+					}
+				}
+			}
+
+			.home--col2 {
+				flex: 1;
+				gap: 5.5em;
+				padding-right: 15.3em;
+				padding-left: 7em;
+
+				.home--col2--stats {
+					flex-direction: column;
+					gap: 3em;
+
+					.home--col2--stats--item {
+						flex-direction: row;
+					}
+				}
+			}
+		}
+		// Section Home End
+
+		// Section Logos
+		section.logos {
+			display: grid;
+			grid-template-columns: repeat(5, 1fr);
+
+			.mobile-tablet-hidden {
+				display: unset;
+			}
+
+			a.view-brands {
+				@include flex-align(row, end);
+				gap: 0.5em;
+				color: white;
+				font-size: 2rem;
+				text-decoration: underline;
+				img {
+					width: 24px;
+				}
+			}
+		}
+		// Section Logos End
+
+		// Section Products
+		section.products {
+			.products--grid {
+				grid-template-columns: repeat(23, 1fr);
+				grid-template-rows: repeat(2, 360px);
+				gap: 2em;
+
+				.products--grid--item {
+					height: 100%;
+					width: 100%;
+				}
+
+				.products--grid--item:nth-of-type(1) {
+					grid-column: span 12;
+				}
+				.products--grid--item:nth-of-type(2) {
+					grid-column: span 5;
+				}
+				.products--grid--item:nth-of-type(3) {
+					grid-column: span 6;
+				}
+				.products--grid--item:nth-of-type(4) {
+					grid-column: span 8;
+				}
+				.products--grid--item:nth-of-type(5) {
+					grid-column: span 9;
+				}
+				.products--grid--item:nth-of-type(6) {
+					grid-column: span 6;
+				}
+			}
+		}
+		// Section Products End
+	}
+	// Main End
+
+	// Footer
+	footer {
+		padding-inline: 15.3em !important;
+		.footer--col2 {
+			nav.nav-secondary {
+				ul {
+					gap: 4.5em;
+				}
+			}
+		}
+	}
+	// Footer End
+}
+// DESKTOP END

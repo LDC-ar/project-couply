@@ -742,4 +742,100 @@ footer .footer--col2 span {
     width: 65px;
     height: 56px;
   }
+}
+@media only screen and (min-width: 1570px) {
+  .wrapper {
+    padding: 0 15.3em;
+  }
+  main section.home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid black;
+  }
+  main section.home .wrapper {
+    padding: 0;
+  }
+  main section.home .home--col1 {
+    flex: 1;
+    padding-left: 15.3em;
+    padding-right: 7em;
+    padding-block: 8em;
+    border-bottom: 0;
+    border-top: 0;
+    border-right: 1px solid black;
+  }
+  main section.home .home--col1 .home--col1--text h1 {
+    margin-top: 0;
+    max-width: 570px;
+  }
+  main section.home .home--col1 .home--col1--text .home--col1--info {
+    margin-bottom: 0;
+  }
+  main section.home .home--col2 {
+    flex: 1;
+    gap: 5.5em;
+    padding-right: 15.3em;
+    padding-left: 7em;
+  }
+  main section.home .home--col2 .home--col2--stats {
+    flex-direction: column;
+    gap: 3em;
+  }
+  main section.home .home--col2 .home--col2--stats .home--col2--stats--item {
+    flex-direction: row;
+  }
+  main section.logos {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+  }
+  main section.logos .mobile-tablet-hidden {
+    display: unset;
+  }
+  main section.logos a.view-brands {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 0.5em;
+    color: white;
+    font-size: 2rem;
+    text-decoration: underline;
+  }
+  main section.logos a.view-brands img {
+    width: 24px;
+  }
+  main section.products .products--grid {
+    grid-template-columns: repeat(23, 1fr);
+    grid-template-rows: repeat(2, 360px);
+    gap: 2em;
+  }
+  main section.products .products--grid .products--grid--item {
+    height: 100%;
+    width: 100%;
+  }
+  main section.products .products--grid .products--grid--item:nth-of-type(1) {
+    grid-column: span 12;
+  }
+  main section.products .products--grid .products--grid--item:nth-of-type(2) {
+    grid-column: span 5;
+  }
+  main section.products .products--grid .products--grid--item:nth-of-type(3) {
+    grid-column: span 6;
+  }
+  main section.products .products--grid .products--grid--item:nth-of-type(4) {
+    grid-column: span 8;
+  }
+  main section.products .products--grid .products--grid--item:nth-of-type(5) {
+    grid-column: span 9;
+  }
+  main section.products .products--grid .products--grid--item:nth-of-type(6) {
+    grid-column: span 6;
+  }
+  footer {
+    padding-inline: 15.3em !important;
+  }
+  footer .footer--col2 nav.nav-secondary ul {
+    gap: 4.5em;
+  }
 }/*# sourceMappingURL=style.css.map */
