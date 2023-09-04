@@ -587,7 +587,7 @@ footer .footer--col2 span {
 	main section.home .home--col1 .home--col1--text .home--col1--info .home--col1--info--right .home--col1--info--right__desc span {
 		font-size: 1.4rem;
 		font-weight: 700;
-		color: var(--clr-green-dark);
+		color: var(--clr-green-span);
 	}
 	main section.home .home--col2 .home--col2--stats {
 		flex-direction: row;
