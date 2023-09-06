@@ -115,11 +115,11 @@ header {
 main {
 	// Section Home
 	section.home {
-		.home--col1 {
+		.home__col1 {
 			border-top: 1px solid black;
 			border-bottom: 1px solid black;
 
-			.home--col1--text {
+			.col1__text {
 				@include flex(column, center, center);
 				text-align: center;
 
@@ -132,12 +132,12 @@ main {
 					margin-bottom: 10px;
 				}
 
-				.home--col1--info {
-					.home--col1--info--left {
+				.text__info {
+					.info__left {
 						@include flex(column, center, center);
 						padding-bottom: 46px;
 
-						.home--col1--info--left__users {
+						.left__users {
 							height: 50px;
 							@include flex(row, center, center);
 							position: relative;
@@ -181,18 +181,18 @@ main {
 			}
 		}
 
-		.home--col2 {
+		.home__col2 {
 			margin: 5.2em 0;
 			display: flex;
 			flex-direction: column;
 			gap: 4.5em;
 
-			.home--col2--stats {
+			.col2__stats {
 				display: flex;
 				flex-direction: column;
 				gap: 3.2em;
 
-				span.nr {
+				.stats--nr {
 					color: white;
 					background-color: black;
 					min-width: 29px;
@@ -214,7 +214,7 @@ main {
 					margin: 0;
 				}
 
-				.home--col2--stats--item {
+				.stats__item {
 					width: 90%;
 					display: flex;
 					align-items: baseline;
@@ -278,14 +278,14 @@ main {
 		gap: 76px;
 		padding-bottom: 77px;
 
-		.products--grid {
+		.products__grid {
 			width: 100%;
 			margin-top: -90px;
 			display: grid;
 			grid-template-columns: 1fr;
 			gap: 1.8em;
 
-			.products--grid--item {
+			.grid__item {
 				position: relative;
 				width: 98%;
 				height: 190px;
@@ -296,7 +296,7 @@ main {
 				box-shadow: 4px 4px black;
 				cursor: pointer;
 
-				.products--grid--item__title {
+				.item--title {
 					position: absolute;
 					width: 100%;
 					top: 0;
@@ -313,7 +313,7 @@ main {
 					}
 				}
 
-				.products--grid--item__price {
+				.item--price {
 					position: absolute;
 					z-index: 2;
 					bottom: 0;
@@ -334,7 +334,7 @@ main {
 					object-fit: cover;
 				}
 
-				&:hover.products--grid--item::after {
+				&:hover.grid__item::after {
 					content: '';
 					position: absolute;
 					width: 100%;
@@ -396,11 +396,11 @@ footer {
 	padding-bottom: 70px !important;
 	gap: 73px;
 
-	.footer--col1 {
+	.footer__col1 {
 		@include flex(row, baseline, space-between);
 
-		.footer--col1--links {
-			.footer--col1--links__social {
+		.col1__links {
+			.links__social {
 				@include flex-justify(row, space-between);
 				gap: 2.5rem;
 				margin-bottom: 12px;
@@ -416,7 +416,7 @@ footer {
 				}
 			}
 
-			span {
+			span.links__email {
 				font-size: 1.4rem;
 				cursor: pointer;
 
@@ -427,7 +427,7 @@ footer {
 		}
 	}
 
-	.footer--col2 {
+	.footer__col2 {
 		@include flex(column, center, center);
 		gap: 30px;
 
@@ -449,7 +449,7 @@ footer {
 			}
 		}
 
-		span {
+		span.col2__copyright {
 			font-size: 1.4rem;
 			color: var(--clr-grey);
 		}
@@ -476,8 +476,8 @@ footer {
 	main {
 		// Section Home
 		section.home {
-			.home--col1 {
-				.home--col1--text {
+			.home__col1 {
+				.col1__text {
 					@include flex(column, flex-start, center);
 					text-align: left;
 
@@ -490,12 +490,12 @@ footer {
 						position: relative;
 					}
 
-					.home--col1--info {
+					.text__info {
 						@include flex(row, center, space-between);
 						gap: 50px;
 						margin-bottom: 53px;
 
-						.home--col1--info--left {
+						.info__left {
 							@include flex(column, flex-start, center);
 							padding-bottom: 0px;
 
@@ -503,11 +503,11 @@ footer {
 								margin-top: -5px;
 							}
 
-							.home--col1--info--left__users {
+							.left__users {
 								transform: translateX(110px);
 							}
 						}
-						.home--col1--info--right {
+						.info__right {
 							height: 90px;
 							background: white;
 							border-radius: 44.5em;
@@ -521,7 +521,7 @@ footer {
 								object-fit: cover;
 								border-radius: 50%;
 							}
-							.home--col1--info--right__desc {
+							.right__desc {
 								margin-right: 40px;
 
 								p {
@@ -539,12 +539,12 @@ footer {
 				}
 			}
 
-			.home--col2 {
-				.home--col2--stats {
+			.home__col2 {
+				.col2__stats {
 					flex-direction: row;
 					gap: 5em;
 
-					.home--col2--stats--item {
+					.stats__item {
 						display: flex;
 						flex-direction: column;
 					}
@@ -571,7 +571,7 @@ footer {
 			@include flex(column, start, center);
 			padding-bottom: 77px;
 
-			.products--grid {
+			.products__grid {
 				grid-template-columns: 1fr 1fr;
 				row-gap: 2.2em;
 				column-gap: 1.6em;
@@ -589,11 +589,11 @@ footer {
 		height: 150px;
 		// gap: 57px;
 
-		.footer--col1 {
+		.footer__col1 {
 			@include flex(column, baseline, space-between);
 		}
 
-		.footer--col2 {
+		.footer__col2 {
 			@include flex(column, flex-end, space-between);
 			gap: 30px;
 
@@ -674,8 +674,8 @@ footer {
 	main {
 		// Section Home
 		section.home {
-			.home--col1 {
-				.home--col1--text {
+			.home__col1 {
+				.col1__text {
 					// Stars
 					h1::after {
 						content: '';
@@ -709,7 +709,7 @@ footer {
 				padding: 0;
 			}
 
-			.home--col1 {
+			.home__col1 {
 				flex: 1;
 				padding-left: 15.3em;
 				padding-right: 7em;
@@ -718,29 +718,29 @@ footer {
 				border-top: 0;
 				border-right: 1px solid black;
 
-				.home--col1--text {
+				.col1__text {
 					h1 {
 						margin-top: 0;
 						max-width: 570px;
 					}
 
-					.home--col1--info {
+					.text__info {
 						margin-bottom: 0;
 					}
 				}
 			}
 
-			.home--col2 {
+			.home__col2 {
 				flex: 1;
 				gap: 5.5em;
 				padding-right: 15.3em;
 				padding-left: 7em;
 
-				.home--col2--stats {
+				.col2__stats {
 					flex-direction: column;
 					gap: 3em;
 
-					.home--col2--stats--item {
+					.stats__item {
 						flex-direction: row;
 					}
 				}
@@ -772,32 +772,32 @@ footer {
 
 		// Section Products
 		section.products {
-			.products--grid {
+			.products__grid {
 				grid-template-columns: repeat(23, 1fr);
 				grid-template-rows: repeat(2, 360px);
 				gap: 2em;
 
-				.products--grid--item {
+				.grid__item {
 					height: 100%;
 					width: 100%;
 				}
 
-				.products--grid--item:nth-of-type(1) {
-					grid-column: span 12;
+				.grid__item:nth-of-type(1) {
+					grid-column: span 11;
 				}
-				.products--grid--item:nth-of-type(2) {
-					grid-column: span 5;
-				}
-				.products--grid--item:nth-of-type(3) {
+				.grid__item:nth-of-type(2) {
 					grid-column: span 6;
 				}
-				.products--grid--item:nth-of-type(4) {
+				.grid__item:nth-of-type(3) {
+					grid-column: span 6;
+				}
+				.grid__item:nth-of-type(4) {
 					grid-column: span 8;
 				}
-				.products--grid--item:nth-of-type(5) {
+				.grid__item:nth-of-type(5) {
 					grid-column: span 9;
 				}
-				.products--grid--item:nth-of-type(6) {
+				.grid__item:nth-of-type(6) {
 					grid-column: span 6;
 				}
 			}
@@ -809,7 +809,7 @@ footer {
 	// Footer
 	footer {
 		padding-inline: 15.3em !important;
-		.footer--col2 {
+		.footer__col2 {
 			nav.nav-secondary {
 				ul {
 					gap: 4.5em;
