@@ -17,3 +17,5 @@ Plus I added:
 - Images scaled down and converted to webp format.
 - Usage of Sass.
 - Some Javascript for mobile menu, smooth scroll on link click.
+
+Notes: Despite the project is not heavy at all or consume API, it got some good core web vital scores https://gyazo.com/e72fbaaa0093a7b61531ef951ebf5859
