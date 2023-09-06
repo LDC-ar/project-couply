@@ -13,5 +13,7 @@ Requirements:
 
 Plus I added:
 
-- Use of Sass.
+- Local hosted font.
+- Images scaled down and converted to webp format.
+- Usage of Sass.
 - Some Javascript for mobile menu, smooth scroll on link click.
