@@ -412,7 +412,7 @@ main section.products .products__grid .grid__item .item--price {
   bottom: 0;
   right: 0;
   background: black;
-  padding: 1.5em 3em 1.1em 2em;
+  padding: 1.5em 3em 1.3em 2em;
   border-top-left-radius: 0.4em;
 }
 main section.products .products__grid .grid__item .item--price span {
@@ -807,6 +807,10 @@ footer .footer__col2 span.col2__copyright {
   main section.products .products__grid .grid__item:nth-of-type(1) {
     grid-column: span 11;
   }
+  main section.products .products__grid .grid__item:nth-of-type(1) .item--title {
+    top: unset;
+    bottom: 0;
+  }
   main section.products .products__grid .grid__item:nth-of-type(2) {
     grid-column: span 6;
   }
@@ -818,6 +822,10 @@ footer .footer__col2 span.col2__copyright {
   }
   main section.products .products__grid .grid__item:nth-of-type(5) {
     grid-column: span 9;
+  }
+  main section.products .products__grid .grid__item:nth-of-type(5) .item--title {
+    top: unset;
+    bottom: 0;
   }
   main section.products .products__grid .grid__item:nth-of-type(6) {
     grid-column: span 6;
