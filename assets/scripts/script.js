@@ -1,3 +1,6 @@
+import "../styles/global.css"
+import "../styles/variables.css"
+import "../styles/style.css"
 // MOBILE MENU
 
 // Get mobile menu element and navbar

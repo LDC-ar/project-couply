@@ -1,0 +1,21 @@
+{
+  "name": "project-couply",
+  "version": "1.0.0",
+  "description": "This is the final challenge of Design Course by Gary Simon.",
+  "main": "webpack.config.js",
+  "scripts": {
+    "dev": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "devDependencies": {
+    "css-loader": "^6.8.1",
+    "style-loader": "^3.3.3"
+  }
+}
